@@ -33,14 +33,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LavaDito</title>
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="styles/regsitro.css">
 </head>
 
 <body>
 
       <div class="nav">
         <div class="box">
-            <img src="logo1.png">
+            <img src="img/logo1.png">
                 <h1>LavaDito</h1>
         </div>
 
