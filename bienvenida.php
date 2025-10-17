@@ -36,37 +36,37 @@
 
             <div class="box">
                 <img src="img/pedido.png" >
-                <a href="">Registrar pedido</a>
+                <a href="registro_pedidos.php">Registrar pedido</a>
                 <a href="">Consultar pedido</a>
             </div>
 
              <div class="box">
                 <img src="img/ropa.png" >
-                <a href="">Registrar servicio</a>
+                <a href="registro_servicios.php">Registrar servicio</a>
                 <a href="">Consultar servicio</a>
             </div>
             
              <div class="box">
                 <img src="img/furgoneta.png" >
-                <a href="">Registrar furgoneta</a>
+                <a href="registro_furgonetas.php">Registrar furgoneta</a>
                 <a href="">Consultar furgoneta</a>
             </div>
 
              <div class="box">
                 <img src="img/conductor.webp" >
-                <a href="">Registrar conductor</a>
+                <a href="registro_conductores.php">Registrar conductor</a>
                 <a href="">Consultar conductor</a>
             </div>
 
              <div class="box">
                 <img src="img/ruta.png" >
-                <a href="">Registrar ruta</a>
+                <a href="registro_rutas.php">Registrar ruta</a>
                 <a href="">Consultar ruta</a>
             </div>
 
              <div class="box">
                 <img src="img/dinero.png" >
-                <a href="">Registrar pago</a>
+                <a href="registro_pagos.php">Registrar pago</a>
                 <a href="">Consultar pago</a>
             </div>
 
