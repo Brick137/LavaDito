@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LavaDito</title>
-    <link rel="stylesheet" href="bienv_estilo.css">
+    <link rel="stylesheet" href="styles/bienv_estilo.css">
 </head>
 
 <body>
 
     <div class="nav">
         <div class="box">
-            <img src="logo1.png">
+            <img src="img/logo1.png">
                 <h1>LavaDito</h1>
         </div>
 
@@ -29,45 +29,45 @@
 
         <div class="container">
             <div class="box">
-                <img src="clientes.png">
+                <img src="img/clientes.png">
                 <a href="registro_clientes.php">Registrar cliente</a>
                 <a href="consul_clien.php">Consultar clientes</a>
             </div>
 
             <div class="box">
-                <img src="pedido.png" >
-                <a href="">Registrar pedido</a>
-                <a href="">Consultar pedido</a>
+                <img src="img/pedido.png" >
+                <a href="registro_pedidos.php">Registrar pedido</a>
+                <a href="consul_pedido.php">Consultar pedido</a>
             </div>
 
              <div class="box">
-                <img src="ropa.png" >
-                <a href="">Registrar servicio</a>
-                <a href="">Consultar servicio</a>
+                <img src="img/ropa.png" >
+                <a href="registro_servicios.php">Registrar servicio</a>
+                <a href="consul_servicio.php">Consultar servicio</a>
             </div>
             
              <div class="box">
-                <img src="furgoneta.png" >
-                <a href="">Registrar furgoneta</a>
-                <a href="">Consultar furgoneta</a>
+                <img src="img/furgoneta.png" >
+                <a href="registro_furgonetas.php">Registrar furgoneta</a>
+                <a href="consul_furgoneta.php">Consultar furgoneta</a>
             </div>
 
              <div class="box">
-                <img src="conductor.webp" >
-                <a href="">Registrar conductor</a>
-                <a href="">Consultar conductor</a>
+                <img src="img/conductor.webp" >
+                <a href="registro_conductores.php">Registrar conductor</a>
+                <a href="consul_conductor.php">Consultar conductor</a>
             </div>
 
              <div class="box">
-                <img src="ruta.png" >
-                <a href="">Registrar ruta</a>
-                <a href="">Consultar ruta</a>
+                <img src="img/ruta.png" >
+                <a href="registro_rutas.php">Registrar ruta</a>
+                <a href="consul_ruta.php">Consultar ruta</a>
             </div>
 
              <div class="box">
-                <img src="dinero.png" >
-                <a href="">Registrar pago</a>
-                <a href="">Consultar pago</a>
+                <img src="img/dinero.png" >
+                <a href="registro_pagos.php">Registrar pago</a>
+                <a href="consul_pagos.php">Consultar pago</a>
             </div>
 
         </div>

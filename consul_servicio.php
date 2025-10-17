@@ -1,7 +1,7 @@
 <?php
 
     include 'conexion.php';
-    $result = mysqli_query($conexion, "SELECT * FROM clientes ORDER BY cliente_id ASC");
+    $result = mysqli_query($conexion, "SELECT * FROM servicios ORDER BY servicio_id ASC");
 
 ?>
 
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LavaDito</title>
+    <title>Consulta pedidos</title>
     <link rel="stylesheet" href="styles/consultas.css">
 </head>
 
@@ -33,17 +33,16 @@
 
     <main>
 
-        <h1>Consulta clientes</h1>
+        <h1>Consulta servicios</h1>
 
        <table class="tabla-estilo">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Teléfono</th>
-                <th>Email</th>
-                <th>Dirección</th>
+                <th>ID de servicio</th>
+                <th>ID de pedido</th>
+                <th>Tipo de servicio</th>
+                <th>Peso</th>
+                <th>Precio</th>
             </tr>
         </thead>
         <tbody>
@@ -51,16 +50,15 @@
             if (mysqli_num_rows($result) > 0) {
                 while ($mostrar = mysqli_fetch_assoc($result)) {
                     echo "<tr>
-                        <td>{$mostrar['cliente_id']}</td>
-                        <td>{$mostrar['nombre']}</td>
-                        <td>{$mostrar['apellidos']}</td>
-                        <td>{$mostrar['telefono']}</td>
-                        <td>{$mostrar['email']}</td>
-                        <td>{$mostrar['direccion']}</td>
+                        <td>{$mostrar['servicio_id']}</td>
+                        <td>{$mostrar['pedido_id']}</td>
+                        <td>{$mostrar['tipo_servicio']}</td>
+                        <td>{$mostrar['peso']}</td>
+                        <td>{$mostrar['precio']}</td>
                       </tr>";
                     }
                 } else {
-                echo "<tr><td colspan='6'>No hay clientes registrados</td></tr>";
+                echo "<tr><td colspan='6'>No hay servicios registrados</td></tr>";
                   }
             ?>
         </tbody>

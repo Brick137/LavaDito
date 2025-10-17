@@ -5,23 +5,23 @@
     if($_SERVER ['REQUEST_METHOD'] === 'POST') {
 
         $nombre= mysqli_real_escape_string($conexion, $_POST['nombre']);
-        $apellidos= mysqli_real_escape_string($conexion, $_POST['apellidos']);
+        $apellido= mysqli_real_escape_string($conexion, $_POST['apellido']);
         $telefono= mysqli_real_escape_string($conexion, $_POST['telefono']);
-        $email= mysqli_real_escape_string($conexion, $_POST['email']);
-        $direccion= mysqli_real_escape_string($conexion, $_POST['direccion']);
+        $licencia= mysqli_real_escape_string($conexion, $_POST['licencia']);
+        $estado= mysqli_real_escape_string($conexion, $_POST['estado']);
 
-        $sql = "INSERT INTO clientes (nombre, apellidos, telefono, email, direccion)
-                VALUES ('$nombre', '$apellidos', '$telefono', '$email', '$direccion')";
+        $sql = "INSERT INTO conductores (nombre, apellido, telefono, licencia, estado)
+                VALUES ('$nombre', '$apellido', '$telefono', '$licencia', '$estado')";
                 
         if (mysqli_query($conexion, $sql)) {
             echo"<script>
-                alert('Cliente registrado con éxito');
-                window.location.href = 'registro_clientes.php';
+                alert('Conductor registrado con éxito');
+                window.location.href = 'registro_conductores.php';
             </script>";
         } else {
             echo"<script>
                 alert('Error de registro');
-                window.location.href = 'registro_clientes.php';
+                window.location.href = 'registro_conductores.php';
             </script>";
         }
     }
@@ -33,7 +33,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LavaDito</title>
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="styles/regsitro.css">
 </head>
 
 <body>
@@ -56,26 +56,26 @@
 
     <main>
 
-        <h1>Registra clientes</h1>
+        <h1>Registra conductores</h1>
 
-        <form method="POST" action="registro_clientes.php">
+        <form method="POST" action="registro_conductores.php">
 
-        <label for="nombre">Nombre del cliente:</label>
+        <label for="nombre">Nombre del conductor:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br>
-        <label for="apellidos">Apellidos del cliente:</label>
-        <input type="text" id="apellidos" name="apellidos" required>
+        <label for="apellidos">Apellidos del conductor:</label>
+        <input type="text" id="apellido" name="apellido" required>
         <br>
-        <label for="telefono">Telefono del cliente:</label>
+        <label for="telefono">Telefono del conductor:</label>
         <input type="text" id="telefono" name="telefono" required>
         <br>
-        <label for="email">Email del cliente:</label>
-        <input type="text" id="email" name="email" required>
+        <label for="licencia">Licencia del conductor:</label>
+        <input type="text" id="licencia" name="licencia" required>
         <br>
-        <label for="direccion">Dirección del cliente:</label>
-        <input type="text" id="direccion" name="direccion" required>
+        <label for="estado">Estado del conductor:</label>
+        <input type="text" id="estado" name="estado" required>
         <br>
-        <button type="submit">Registrar cliente</button>
+        <button type="submit">Registrar conductor</button>
 
         </form>
 

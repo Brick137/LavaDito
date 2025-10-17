@@ -1,7 +1,7 @@
 <?php
 
     include 'conexion.php';
-    $result = mysqli_query($conexion, "SELECT * FROM clientes ORDER BY cliente_id ASC");
+    $result = mysqli_query($conexion, "SELECT * FROM pagos ORDER BY pago_id ASC");
 
 ?>
 
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LavaDito</title>
+    <title>Consulta pedidos</title>
     <link rel="stylesheet" href="styles/consultas.css">
 </head>
 
@@ -33,17 +33,17 @@
 
     <main>
 
-        <h1>Consulta clientes</h1>
+        <h1>Consulta pagos</h1>
 
        <table class="tabla-estilo">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Teléfono</th>
-                <th>Email</th>
-                <th>Dirección</th>
+                <th>ID del pago</th>
+                <th>ID del pedido</th>
+                <th>Monto</th>
+                <th>Fecha de pago</th>
+                <th>Método de pago</th>
+                <th>Estado</th>
             </tr>
         </thead>
         <tbody>
@@ -51,16 +51,16 @@
             if (mysqli_num_rows($result) > 0) {
                 while ($mostrar = mysqli_fetch_assoc($result)) {
                     echo "<tr>
-                        <td>{$mostrar['cliente_id']}</td>
-                        <td>{$mostrar['nombre']}</td>
-                        <td>{$mostrar['apellidos']}</td>
-                        <td>{$mostrar['telefono']}</td>
-                        <td>{$mostrar['email']}</td>
-                        <td>{$mostrar['direccion']}</td>
+                        <td>{$mostrar['pago_id']}</td>
+                        <td>{$mostrar['pedido_id']}</td>
+                        <td>{$mostrar['monto']}</td>
+                        <td>{$mostrar['fecha_pago']}</td>
+                        <td>{$mostrar['metodo']}</td>
+                        <td>{$mostrar['estado']}</td>
                       </tr>";
                     }
                 } else {
-                echo "<tr><td colspan='6'>No hay clientes registrados</td></tr>";
+                echo "<tr><td colspan='6'>No hay pagos registrados</td></tr>";
                   }
             ?>
         </tbody>
