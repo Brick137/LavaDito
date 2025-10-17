@@ -67,7 +67,7 @@ body {
 }
 
 .bloque{
-    background-image: url(washer.webp);
+    background-image: url(../img/washer.webp);
     background-size: cover;
     background-position: center;
     width: 97%;
