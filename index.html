@@ -4,60 +4,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LavaDito</title>
     <link rel="stylesheet" href="styles/estilos_inicio.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/dmsans/dmsans.css">
+    <link rel="stylesheet" href="assets/fonts/futura-display-cufonfonts/Futura Display.ttf">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
 </head>
 
 <body>
 
-    <div class="nav">
-        <div class="box">
-            <img src="img/logo1.png">
-                <h1>LavaDito</h1>
+    <!--ENCABEZADO-->
+    <header class="menu__navbar">
+        <div class="navbar__logo">
+            <a href="index.html" class="navbar__link-logo">
+                <img src="assets/img/logo-transparente.png" class="navbar__logo-ligth" alt="Logo">
+            </a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="inicio_sesion.html">Inicio de sesión</a></li>
+        <!--Navegacion-->
+
+        <nav class="navbar__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <i class="fa-solid fa fa-home nav_item-icon"></i>
+                    <a href="index.html" class="nav__title">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa-solid fa-usd nav_item-icon"></i>
+                    <a href="#" class="nav__title">Precios
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                    </a>
+                    <ul class="nav__submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Lavado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Secado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Planchado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Exprés</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-chevron-circle-right nav_item-icon"></i>
+                    <a href="#" class="nav__title">Servicios
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                    </a>
+                    <ul class="nav__submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Lavadoras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Secadoras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Industria</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Hoteles</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Restaurantes</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-calendar nav_item-icon"></i>
+                    <a href="#" class="nav__title">Agendar Recolección</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-address-card nav_item-icon"></i>
+                    <a href="#" class="nav__title">Contacto</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-user-circle nav_item-icon"></i>
+                    <a href="login.html" class="nav__title">Iniciar sesión</a>
+                </li>
             </ul>
         </nav>
-    </div>
+    </header>
+    <!--CUERPO DE LA PAGINA-->
+    <main>
 
-    <div class="bloque">
-        <h2>Bienvenido a LavaDito.<br>
-        Aquí podrás gestionar la<br> 
-        actividad de tu lavandería</h2>
-        <a href="inicio_sesion.html" class="btn-agenda">Comencemos</a>
-    </div>
+        <!--BANNER-->
 
-    <div class="container">
-        <div class="box2">
-            <img src="img/clothes_1.jpg">
-            <h3>LavaDito es un sistema dirigido <br>
-            para lavanderías para que estas <br>
-             lleven un mejor manejo de sus  <br>
-             operaciones</h3>
-        </div>
+        <section class="layout__banner">
+            <div class="banner__container">
+                <img src="assets/img/washer.webp" alt="Lavadora promocional" class="banner__container--img">
 
-        <div class="box3">
-            <img src="img/SI.webp">
-            <h3>Nuestra misión es hacer que tu trabajo <br>
-                sea más fácil, por eso este sistema <br>
-                te permite gestionar tus rutas, precios, <br>
-                pedidos y toda la información que utilices.
-            </h3>
-        </div>
-    </div>
+                <div class="banner__content">
+                    <h1 class="banner__title">Super DescuenTito</h1>
+
+                    <div class="banner__description">
+                        <p class="banner__description-one">
+                            Solicita tu servicio y haz tu pedido ahora
+                        </p>
+                        <p class="banner__description-two">
+                            1 - Recogemos tu ropa. <br>
+                            2 - La lavamos, planchamos y doblamos. <br>
+                            3 - Te la entregamos limpia y lista.
+                        </p>
+                    </div>
+
+                    <a href="login.html" class="banner__btn">Agendar Servicio</a>
+                </div>
+
+                <!-- Figuras decorativas -->
+                <ul class="banner__shapes">
+                    <li class="shapes__item shapes__item--shape1">
+                        <img src="assets/img/superdito.png" alt="Figura decorativa 1" class="shapes__img">
+                    </li>
+                    <li class="shapes__item shapes__item--shape2">
+                        <img src="assets/img/burbujas-03.gif" alt="Figura decorativa 2" class="shapes__img">
+                    </li>
+                    <li class="shapes__item shapes__item--bubble1"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 1"></li>
+                    <li class="shapes__item shapes__item--bubble2"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 2"></li>
+                    <li class="shapes__item shapes__item--bubble3"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 3"></li>
+                    <li class="shapes__item shapes__item--bubble4"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 4"></li>
+                    <li class="shapes__item shapes__item--bubble5"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 5"></li>
+                    <li class="shapes__item shapes__item--bubble6"><img src="assets/img/shape- (4).png"
+                            class="shapes__img" alt="burbuja 6"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--SERVICIOS-->
+
+        <section class="layout__servicios">
+            <div class="servicios__container">
+
+            </div>
+        </section>
 
 
-    <footer>
-        <h4>Castillo Alcantar Diego </h4> <br>
-        <h4>Hernández Pérez José Luis</h4> <br>
-        <h4>Limón Jiménez Jorge Alberto</h4> <br>
-        <h4>Vázquez López Ismael</h4>
-    </footer>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__box">
+                    <img src="assets/img/clothes_1.jpg" alt="Lavandería LavaDito" class="about__img">
+                    <div class="about__text">
+                        <h3>
+                            LavaDito es un sistema dirigido a lavanderías<br>
+                            para que lleven un mejor manejo de sus operaciones.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="about__box reverse">
+                    <img src="assets/img/SI.webp" alt="Gestión LavaDito" class="about__img">
+                    <div class="about__text">
+                        <h3>
+                            Nuestra misión es hacer que tu trabajo sea más fácil.<br>
+                            Con LavaDito puedes gestionar tus rutas, precios,<br>
+                            pedidos y toda la información que utilices.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+            <h4>Castillo Alcantar Diego</h4>
+            <h4>Hernández Pérez José Luis</h4>
+            <h4>Limón Jiménez Jorge Alberto</h4>
+            <h4>Vázquez López Ismael</h4>
+        </footer>
 
 
 </body>
+
 </html>
