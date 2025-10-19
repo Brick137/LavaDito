@@ -3,28 +3,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
+
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fonts/dmsans/dmsans.css">
+    <link rel="stylesheet" href="fonts/futura-display-cufonfonts/Futura Display.ttf">
+
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/ini_ses.css">
+
 </head>
+
 <body>
-    
-      <div class="nav">
-        <div class="box">
-            <img src="img/logo1.png">
-                <h1>LavaDito</h1>
+
+    <header class="menu__navbar">
+        <div class="navbar__logo">
+            <a href="index.html" class="navbar__link-logo">
+                <img src="img/logo-transparente.png" class="navbar__logo-ligth" alt="Logo">
+            </a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Inicio de sesión</a></li>
+        <!--Navegacion-->
+
+        <nav class="navbar__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <i class="fa-solid fa fa-home nav_item-icon"></i>
+                    <a href="index.html" class="nav__title">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa-solid fa-usd nav_item-icon"></i>
+                    <a href="#" class="nav__title">Precios
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                    </a>
+                    <ul class="nav__submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Lavado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Secado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Planchado</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Exprés</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-chevron-circle-right nav_item-icon"></i>
+                    <a href="#" class="nav__title">Servicios
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                    </a>
+                    <ul class="nav__submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Lavadoras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Secadoras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Industria</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Hoteles</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__title">Restaurantes</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-calendar nav_item-icon"></i>
+                    <a href="#" class="nav__title">Agendar Recolección</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-address-card nav_item-icon"></i>
+                    <a href="#" class="nav__title">Contacto</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="fa fa-user-circle nav_item-icon"></i>
+                    <a href="inicio_sesion.html" class="nav__title">Iniciar sesión</a>
+                </li>
             </ul>
         </nav>
-    </div>
+    </header>
 
 
-    <main>    
+    <main>
         <form action="">
             <h3>Acceso de usuarios</h3>
             Ingrese usuario <br><br>
@@ -37,7 +109,7 @@
             <br>
             <input type="button" id="btnConfirmar" value="Confirmar" onclick="verificar()">
         </form>
-    </main>
+    </main> 
 
     <script>
 
