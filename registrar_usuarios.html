@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuarios</title>
+
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="dmsans/dmsans.css">
+    <link rel="stylesheet" href="futura-display-cufonfonts/Futura Display.ttf">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/ini_ses.css">
+</head>
+<body>
+
+    <header class="menu__navbar">
+        <div class="navbar__logo">
+            <a href="index.html" class="navbar__link-logo">
+                <img src="img/logo-transparente.png" class="navbar__logo-ligth" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <form action="registrar_usuarios.php" method="POST">
+            <h3>Registro de usuario</h3>
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required>
+            <br><br>
+
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required>
+            <br><br>
+
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" name="clave" required>
+            <br><br>
+
+            <input type="submit" value="Registrarse">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <h4>Castillo Alcantar Diego </h4>
+        <h4>Hernández Pérez José Luis</h4>
+        <h4>Limón Jiménez Jorge Alberto</h4>
+        <h4>Vázquez López Ismael</h4>
+    </footer>
+
+</body>
+</html>

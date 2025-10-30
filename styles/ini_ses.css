@@ -345,3 +345,17 @@ body::after {
     opacity: 0;
   }
 }
+.btn-registro {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-registro:hover {
+    background-color: #45a049;
+}
