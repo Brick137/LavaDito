@@ -77,12 +77,6 @@ CREATE TABLE pagos (
 );
 -- Tabla: usuarios
 CREATE TABLE usuarios (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  usuario VARCHAR(50) UNIQUE NOT NULL,
-  clave VARCHAR(255) NOT NULL
-);
--- Tabla: usuarios
-CREATE TABLE usuarios (
   usuario_id INT AUTO_INCREMENT PRIMARY KEY,
   cliente_id INT NOT NULL,
   usuario VARCHAR(50) UNIQUE NOT NULL,
