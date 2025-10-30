@@ -75,3 +75,9 @@ CREATE TABLE pagos (
   estado VARCHAR(20),
   FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id)
 );
+-- Tabla: usuarios
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(50) UNIQUE NOT NULL,
+  clave VARCHAR(255) NOT NULL
+);
