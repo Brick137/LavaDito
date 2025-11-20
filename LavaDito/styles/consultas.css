@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    }
+
+
+.nav {
+     background: linear-gradient(135deg, #2337c6, #5f4dee, #8a7bff);
+     margin: 0px;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+    }
+
+.nav h1 {
+        margin-left: 10px;
+        color: white;
+        font-size: 25px;
+        }
+
+.nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        }
+
+.nav li {
+        float: left;
+        }
+
+.nav li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        margin-top: 5px;
+        border-radius: 15px;
+        font-weight: bold;
+        }
+
+.nav li a:hover{
+    background: linear-gradient(135deg, #3d50e0, #6a66ff, #a39cff);
+    border: none;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box img{
+    width: 80px;  
+    height: auto; 
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+main h1{
+    background: linear-gradient(135deg, #2337c6, #5f4dee, #8a7bff);
+    text-align: center;
+    padding: 10 20px;
+    border-radius: 12px;
+    color: white;
+}
+
+
+.tabla-estilo {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-estilo thead tr {
+    background: linear-gradient(135deg, #2337c6, #5f4dee, #8a7bff);
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabla-estilo th, .tabla-estilo td {
+    padding: 12px 15px;
+}
+
+.tabla-estilo tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla-estilo tbody tr:last-of-type {
+    border-bottom: 2px solid #8a7bff;
+}
+
+footer{
+    background: linear-gradient(135deg, #2337c6, #5f4dee, #8a7bff);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+footer h4{
+    padding: 11px;
+    display: inline-block;
+    text-align: center;
+}

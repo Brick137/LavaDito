@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - LavaDito</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: linear-gradient(135deg, #f0f4ff 0%, #eef2f3 100%);
+            padding-top: 85px; /* Espacio para el navbar */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar estilo Glass */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        /* ESTILO DEL LOGO LAVADITO (Igual al index) */
+        .brand-text {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: #9ecfff; /* Celeste claro relleno */
+            -webkit-text-stroke: 1.5px #2c5282; /* Borde azul oscuro */
+            margin-left: 10px;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Tarjeta de Registro */
+        .register-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .register-header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        /* Ajustes para los inputs flotantes */
+        .form-floating > label {
+            padding-left: 1.5rem; /* Espacio para que no choque con el borde si pones iconos */
+        }
+        
+        main {
+            flex: 1; /* Empuja el footer hacia abajo */
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <div class="container">
+                
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-transparente.png" alt="Logo" height="55">
+                    <span class="brand-text">LavaDito</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item ms-2">
+                            <a href="inicio_sesion.php" class="btn btn-outline-primary rounded-pill px-4 btn-sm">
+                                Iniciar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8"> <div class="card register-card">
+                    <div class="register-header">
+                        <h3 class="mb-0 fw-bold"><i class="fa-solid fa-user-plus me-2"></i>Crear Cuenta</h3>
+                        <p class="mb-0 opacity-75 small">Únete a LavaDito hoy mismo</p>
+                    </div>
+
+                    <div class="card-body p-4 p-md-5">
+                        
+                        <form action="registrar_usuarios.php" method="POST">
+                            
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                                        <label for="nombre">Nombre(s)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                                        <label for="apellidos">Apellidos</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-7">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                                        <label for="email">Correo Electrónico</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+                                        <label for="telefono">Teléfono</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección completa" required>
+                                <label for="direccion">Dirección Completa</label>
+                            </div>
+
+                            <hr class="my-4 opacity-25">
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
+                                        <label for="usuario"><i class="fa-solid fa-user me-2 text-muted"></i>Usuario</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="clave" name="clave" placeholder="Contraseña" required>
+                                        <label for="clave"><i class="fa-solid fa-lock me-2 text-muted"></i>Contraseña</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <select class="form-select" id="rol" name="rol" aria-label="Selecciona tu rol" required>
+                                    <option selected disabled value="">Selecciona una opción...</option>
+                                    <option value="cliente">Cliente (Quiero solicitar servicios)</option>
+                                    <option value="conductor">Conductor (Quiero trabajar)</option>
+                                    <option value="lavanderia">Lavandería (Soy administrador)</option>
+                                </select>
+                                <label for="rol">Tipo de Cuenta</label>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg shadow fw-bold">
+                                    Registrarse Ahora <i class="fa-solid fa-chevron-right ms-2"></i>
+                                </button>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <span class="text-muted small">¿Ya tienes cuenta?</span> 
+                                <a href="inicio_sesion.php" class="text-decoration-none fw-bold">Inicia Sesión</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 text-center mt-auto">
+        <div class="container">
+            <p class="text-uppercase text-primary fw-bold mb-3 small">Equipo de Desarrollo</p>
+            <div class="row justify-content-center small text-secondary">
+                <div class="col-md-3 mb-2">Castillo Alcantar Diego</div>
+                <div class="col-md-3 mb-2">Hernández Pérez José Luis</div>
+                <div class="col-md-3 mb-2">Limón Jiménez Jorge Alberto</div>
+                <div class="col-md-3 mb-2">Vázquez López Ismael</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
